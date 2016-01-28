@@ -1,0 +1,17 @@
+import java.util.Random;
+
+public class Answer {
+
+	public String generateResult(String name) {
+		Random r = new Random();
+		int Low = 6;
+		int High = 15;
+		int randomNumber = r.nextInt(High-Low) + Low;
+		return name+" "+randomNumber;
+		
+	}
+	public static void main(String args[]) {
+		Answer ans=new Answer();
+		System.out.println(ans.generateResult("Rashik"));
+	}
+}
